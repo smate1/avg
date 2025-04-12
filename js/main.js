@@ -244,6 +244,28 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 })
+document.addEventListener('DOMContentLoaded', function () {
+	const burger = document.querySelector('.burger')
+	const header = document.querySelector('.header') // бо клас .open додається до .header
+	const body = document.body
+	const menuLinks = document.querySelectorAll('.mobile__menu-link')
+
+	// Відкриття меню
+	burger.addEventListener('click', function () {
+		header.classList.add('open')
+		body.classList.add('no-scroll')
+	})
+
+	// Закриття при кліку на пункт меню
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function () {
+			header.classList.remove('open')
+			body.classList.remove('no-scroll')
+		})
+	})
+})
+
+
 
 
 

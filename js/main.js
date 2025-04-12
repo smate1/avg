@@ -191,6 +191,61 @@ function toggleMenu() {
 		document.body.classList.remove('no-scroll')
 	}
 }
+document.addEventListener('DOMContentLoaded', function () {
+	const links = document.querySelectorAll('.services__menu-link')
+	const items = document.querySelectorAll('.infos__item')
+	const servicesMobile = document.querySelector('.services-mobile')
+	const backButton = document.querySelector('.mobile-arrow-service')
 
-// приклад виклику:
-document.querySelector('.menu-toggle-btn').addEventListener('click', toggleMenu)
+	links.forEach(link => {
+		link.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			const targetId = this.getAttribute('data-target').replace('#', '')
+			const targetElement = document.getElementById(targetId)
+
+			if (targetElement) {
+				items.forEach(item => item.classList.remove('active'))
+				targetElement.classList.add('active')
+
+				if (servicesMobile) {
+					servicesMobile.style.transition = 'opacity 0.3s ease'
+					servicesMobile.style.opacity = '0'
+					setTimeout(() => {
+						servicesMobile.style.display = 'none'
+					})
+				}
+
+				setTimeout(() => {
+					targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+				}, 50)
+			}
+		})
+	})
+
+	if (backButton) {
+		backButton.addEventListener('click', function () {
+			const isAnyItemActive = document.querySelector('.infos__item.active')
+
+			if (isAnyItemActive) {
+				// Закриваємо активний блок і повертаємо список
+				items.forEach(item => item.classList.remove('active'))
+
+				if (servicesMobile) {
+					servicesMobile.style.display = 'block'
+					setTimeout(() => {
+						servicesMobile.style.opacity = '1'
+					}, 50)
+				}
+			} else {
+				// Якщо нічого не відкрито — переходимо на index.html
+				window.location.href = './index.html'
+			}
+		})
+	}
+})
+
+
+
+
+

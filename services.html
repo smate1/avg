@@ -57,6 +57,57 @@
   </div>
 
   <header class="header">
+    <ul class="mobile__menu">
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./index.html">
+          Головна
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html">
+          Про нас
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./services.html">
+          Послуги
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#footer">
+          Контакти
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html#partners">
+          Партнери
+        </a>
+      </li>
+    </ul>
+    <div class="header-mobile">
+      <a class="mobile-arrow-service" id="mobile-arrow-service" href="#">
+        <img src="./images/mobile-arrow.svg" alt="">
+      </a>
+      <a class="mobile-logo" href="#">
+        <img src="./images/mobile-logo.png" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/instagram.svg" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/facebook.svg" alt="">
+      </a>
+      <div class="custom-select-wrapper">
+        <div class="custom-select-trigger">UKR</div>
+        <div class="custom-options">
+          <span class="custom-option" data-value="UKR">UKR</span>
+          <span class="custom-option" data-value="ENG">ENG</span>
+          <span class="custom-option" data-value="RUS">RUS</span>
+          <span class="custom-option" data-value="ARM">ARM</span>
+        </div>
+      </div>
+      <input type="hidden" name="language" id="language-input" value="UKR">
+    </div>
     <div class="container">
       <div class="header__top">
         <a class="header__logo" href="#">
@@ -111,6 +162,45 @@
       </blockquote>
     </div>
   </header>
+  <div class="services-mobile">
+    <div class="container">
+      <h2 class="services__title-mobile">
+        Наші послуги:
+      </h2>
+      <ul class="services__menu">
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#interpretation">
+            Усний переклад
+          </a>
+        </li>
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#written">
+            Письмовий переклад
+          </a>
+        </li>
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#notarization">
+            Нотаріальне посвідчення
+          </a>
+        </li>
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#appostille">
+            Апостиль/легалізація
+          </a>
+        </li>
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#record">
+            Довідка про несудимість
+          </a>
+        </li>
+        <li class="services__menu-item">
+          <a class="services__menu-link" data-target="#consultations">
+            Міграційні косультації
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <section class="facilities">
     <div class="container">
       <div class="facilities__inner">
@@ -174,8 +264,13 @@
   <section class="infos">
     <div class="page-container">
       <div class="infos__items">
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-1.svg" alt="">
+        <div class="infos__item" id="interpretation">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-1.svg" alt="">
+            <div class="infos__title-mobile">
+              Усний переклад
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Усний переклад
@@ -212,8 +307,13 @@
             </button>
           </div>
         </div>
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-2.svg" alt="">
+        <div class="infos__item" id="written">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-2.svg" alt="">
+            <div class="infos__title-mobile">
+              Письмовий переклад
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Письмовий переклад
@@ -245,8 +345,13 @@
             </button>
           </div>
         </div>
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-3.svg" alt="">
+        <div class="infos__item" id="notarization">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-3.svg" alt="">
+            <div class="infos__title-mobile">
+              Нотаріальне посвідчення
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Нотаріальне посвідчення
@@ -265,8 +370,13 @@
             </button>
           </div>
         </div>
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-4.svg" alt="">
+        <div class="infos__item" id="appostille">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-4.svg" alt="">
+            <div class="infos__title-mobile">
+              Апостиль/легалізація
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Апостиль/легалізація
@@ -294,8 +404,13 @@
             </button>
           </div>
         </div>
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-5.svg" alt="">
+        <div class="infos__item" id="record">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-5.svg" alt="">
+            <div class="infos__title-mobile">
+              Довідка про несудимість
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Довідка про несудимість
@@ -323,8 +438,13 @@
             </button>
           </div>
         </div>
-        <div class="infos__item">
-          <img class="infos__img" src="./images/services-6.svg" alt="">
+        <div class="infos__item" id="consultations">
+          <div class="infos__wrapper">
+            <img class="infos__img" src="./images/services-6.svg" alt="">
+            <div class="infos__title-mobile">
+              Міграційні консультації
+            </div>
+          </div>
           <div class="infos__content">
             <div class="infos__title">
               Міграційні консультації
@@ -344,7 +464,7 @@
     <a class="arrow-up arrow-up-infos" href="#">
     </a>
   </section>
-  <footer class="footer" id="footer">
+  <footer class="footer footer-services" id="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__socials">
@@ -391,19 +511,28 @@
                azg.translation@gmail.com
             </a>
           </div>
-          <div class="footer__contacts-text">
-            Завітайте до нашого офісу:
-          </div>
-          <div class="footer__contacts-address">
-            м. Київ, вул. Саксаганського 133А
+          <div class="footer__block-wrapper">
+            <div class="footer__contacts-text">
+              Завітайте до нашого офісу:
+            </div>
+            <div class="footer__contacts-address">
+              м. Київ, вул. Саксаганського 133А
+            </div>
           </div>
         </div>
         <p class="footer__right-text">
           “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
-          нашим
-          Бюро
+          нашим Бюро
           перекладів, відповідають найвищим стандартам якості.”
         </p>
+      </div>
+      <div class="footer__mobile-wrapper">
+        <div class="footer__contacts-text">
+          Завітайте до нашого офісу:
+        </div>
+        <div class="footer__contacts-address">
+          м. Київ, вул. Саксаганського 133А
+        </div>
       </div>
     </div>
     <a class="footer__logo" href="#">

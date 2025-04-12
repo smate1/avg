@@ -28,6 +28,57 @@
 
 <body>
   <header class="header">
+    <ul class="mobile__menu">
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./index.html">
+          Головна
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html">
+          Про нас
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./services.html">
+          Послуги
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#">
+          Контакти
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html#partners">
+          Партнери
+        </a>
+      </li>
+    </ul>
+    <div class="header-mobile">
+      <a class="mobile-arrow-about" href="./index.html">
+        <img src="./images/mobile-arrow.svg" alt="">
+      </a>
+      <a class="mobile-logo" href="#">
+        <img src="./images/mobile-logo.png" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/instagram.svg" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/facebook.svg" alt="">
+      </a>
+      <div class="custom-select-wrapper">
+        <div class="custom-select-trigger">UKR</div>
+        <div class="custom-options">
+          <span class="custom-option" data-value="UKR">UKR</span>
+          <span class="custom-option" data-value="ENG">ENG</span>
+          <span class="custom-option" data-value="RUS">RUS</span>
+          <span class="custom-option" data-value="ARM">ARM</span>
+        </div>
+      </div>
+      <input type="hidden" name="language" id="language-input" value="UKR">
+    </div>
     <div class="container">
       <div class="header__top">
         <a class="header__logo" href="#">
@@ -81,6 +132,23 @@
         «Найстрашніше - прогавити прекрасне»
       </blockquote>
     </div>
+    <div class="header__wrapper header__wrapper-mobile">
+      <div class="header__content">
+        <div class="container">
+          <h1 class="header__title">
+            Кожне слово <br> має значення
+          </h1>
+          <div class="header__blockquote">
+            <blockquote class="header__blockquote-text">
+              «Найстрашніше - прогавити прекрасне»
+            </blockquote>
+            <p class="header__blockquote-name">
+              Сергій Параджанов
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <section class="activity">
     <div class="container">
@@ -106,15 +174,32 @@
             а також знають стандарти та правила перекладу різноманітної документації.
           </p>
         </div>
-        <img class="activity__img" src="./images/activity-1.png" alt="">
+        <div class="activity__wrapper">
+          <img class="activity__img" src="./images/activity-1.png" alt="">
+          <div class="activity__text-bottom--mobile">
+            Штат нашої компанії – це широке коло дипломованих перекладачів та професіоналів, які відмінно володіють багатьма мовами,
+            а також знають стандарти та правила перекладу різноманітної документації.
+          </div>
+        </div>
       </div>
       <div class="activity__inner activity__inner-symbols">
-        <img class="activity__img" src="./images/activity-2.png" alt="">
+        <div class="activity__wrapper">
+          <img class="activity__img activity__img-bottom" src="./images/activity-2.png" alt="">
+          <p class="activity__text-mobile">
+            З вірменської мови слово «АЗГ» у назві нашого бюро перекладається як «нація».
+            Гранат у вірменській культурі символізує життя, процвітання, достаток та родючість. Він постає невідʼємною частиною
+            історії вірмен, і часто оспівується у вірменських піснях, стародавніх приказках та легендах. А за давньою традицією, у
+            день вірменського весілля наречена повинна кинути гранат на землю… і чим більше гранатових зерен випаде із цього плоду,
+            тим більше діточок має народитися у цій сімʼї.
+            Шедевр світового кіномистецтва – фільм «Колір гранату» українського режисера вірменського походження Сергія Параджанова
+            яскраво зображує значення цієї ягоди для вірмен.
+          </p>
+        </div>
         <div class="activity__left">
           <h2 class="activity__title-bottom title">
             Назва та символіка
           </h2>
-          <p class="activity__text">
+          <p class="activity__text activity__text-left">
             З вірменської мови слово «АЗГ» у назві нашого бюро перекладається як «нація».
             Гранат у вірменській культурі символізує життя, процвітання, достаток та родючість. Він постає невідʼємною
             частиною
@@ -138,7 +223,7 @@
           <h2 class="where__title title">
             Де нас шукати?
           </h2>
-          <p class="where__text">
+          <p class="where__text where__text-top">
             Якщо ви знаходитесь в Києві та потребуйте послуг якісного перекладу, завітайте до нашого офісу на <span>
               вул. Саксаганського
               133А
@@ -151,8 +236,16 @@
             width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="where__text where__time">
-          Наш офіс працює з <span>9:00 до 18:00</span> з Понеділка по П’ятницю
+        <div class="where__wrapper">
+          <p class="where__text where__text-mobile">
+            Якщо ви знаходитесь в Києві та потребуйте послуг якісного перекладу, завітайте до нашого офісу на <span>
+              вул. Саксаганського
+              133А
+            </span>
+          </p>
+          <div class="where__text where__time">
+            Наш офіс працює з <span>9:00 до 18:00</span> з Понеділка по П’ятницю
+          </div>
         </div>
       </div>
     </div>
@@ -216,19 +309,28 @@
                azg.translation@gmail.com
             </a>
           </div>
-          <div class="footer__contacts-text">
-            Завітайте до нашого офісу:
-          </div>
-          <div class="footer__contacts-address">
-            м. Київ, вул. Саксаганського 133А
+          <div class="footer__block-wrapper">
+            <div class="footer__contacts-text">
+              Завітайте до нашого офісу:
+            </div>
+            <div class="footer__contacts-address">
+              м. Київ, вул. Саксаганського 133А
+            </div>
           </div>
         </div>
         <p class="footer__right-text">
           “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
-          нашим
-          Бюро
+          нашим Бюро
           перекладів, відповідають найвищим стандартам якості.”
         </p>
+      </div>
+      <div class="footer__mobile-wrapper">
+        <div class="footer__contacts-text">
+          Завітайте до нашого офісу:
+        </div>
+        <div class="footer__contacts-address">
+          м. Київ, вул. Саксаганського 133А
+        </div>
       </div>
     </div>
     <a class="footer__logo" href="#">

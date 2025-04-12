@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="UKR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AVG</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .menu__item-link--main::after {
+    transform: scaleX(1);
+  }
+</style>
+
+<body>
+  <header class="header">
+    <ul class="mobile__menu">
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./index.html">
+          Головна
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html">
+          Про нас
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./services.html">
+          Послуги
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="#">
+          Контакти
+        </a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="./about.html#partners">
+          Партнери
+        </a>
+      </li>
+    </ul>
+    <div class="header-mobile">
+      <a class="mobile-arrow" href="./index.html">
+        <img src="./images/mobile-arrow.svg" alt="">
+      </a>
+      <a class="mobile-logo" href="#">
+        <img src="./images/mobile-logo.png" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/instagram.svg" alt="">
+      </a>
+      <a class="mobile__social" href="#">
+        <img src="./images/facebook.svg" alt="">
+      </a>
+      <div class="custom-select-wrapper">
+        <div class="custom-select-trigger">UKR</div>
+        <div class="custom-options">
+          <span class="custom-option" data-value="UKR">UKR</span>
+          <span class="custom-option" data-value="ENG">ENG</span>
+          <span class="custom-option" data-value="RUS">RUS</span>
+          <span class="custom-option" data-value="ARM">ARM</span>
+        </div>
+      </div>
+      <input type="hidden" name="language" id="language-input" value="UKR">
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--main" href="./index.html">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--about" href="./about.html">
+              Про нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--services" href="./services.html">
+              Послуги
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--contacts" href="#footer">
+              Контакти
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--parnters" href="./about.html#partners">
+              Партнери
+            </a>
+          </li>
+        </ul>
+        <div class="header__lang">
+          <a id="eng-lang" class="header__lang-link" href="#">
+            ENG
+          </a>
+          <a id="ukr-lang" class="header__lang-link" href="#">
+            /UKR
+          </a>
+          <a id="rus-lang" class="header__lang-link" href="#">
+            /RUS
+          </a>
+          <a id="arm-lang" class="header__lang-link" href="#">
+            /ARM
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="header__content">
+        <div class="container">
+          <h1 class="header__title">
+            Кожне слово <br> має значення
+          </h1>
+          <div class="header__blockquote">
+            <blockquote class="header__blockquote-text">
+              «Найстрашніше - прогавити прекрасне»
+            </blockquote>
+            <p class="header__blockquote-name">
+              Сергій Параджанов
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="services">
+    <div class="container">
+      <h2 class="services__title title">
+        Наші послуги:
+      </h2>
+      <div class="services__items">
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-1.svg" alt="">
+          <p class="services__item-text">
+            Усний переклад
+          </p>
+        </div>
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-2.svg" alt="">
+          <p class="services__item-text">
+            Письмовий переклад
+          </p>
+        </div>
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-3.svg" alt="">
+          <p class="services__item-text">
+            Нотаріальне посвідчення
+          </p>
+        </div>
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-4.svg" alt="">
+          <p class="services__item-text">
+            Апостиль/легалізація
+          </p>
+        </div>
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-5.svg" alt="">
+          <p class="services__item-text">
+            Довідка про несудимість
+          </p>
+        </div>
+        <div class="services__item">
+          <img class="services__item-img" src="./images/services-6.svg" alt="">
+          <p class="services__item-text">
+            Міграційні консультації
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <h2 class="info__title title">
+        Будь-яка мова, навіть <br> рідкісна – не проблема!
+      </h2>
+      <div class="info__items">
+        <div class="info__item">
+          <div class="info__item-num">01</div>
+          <div class="info__item-title">
+            50 мов
+          </div>
+          <div class="info__item-text info__item-text--lang">
+            Переклад з/на більш ніж 50 мов світу
+          </div>
+        </div>
+        <div class="info__item">
+          <div class="info__item-num">02</div>
+          <div class="info__item-title">
+            Розповсюджені мови
+          </div>
+          <div class="info__item-text">
+            Наші спеціалісти працюють з розповсюдженими мовами <span>(англійська, німецька, французька, польська
+              тощо)</span>
+          </div>
+        </div>
+        <div class="info__item">
+          <div class="info__item-num">03</div>
+          <div class="info__item-title">
+            Рідкісні мови
+          </div>
+          <div class="info__item-text">
+            Працюємо з достатньо рідкісними або складними мовами <span>
+              (японська, китайська, в’єтнамська, вірменська, іврит, арабська,
+              фарсі, урду тощо)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title title">
+        Відгуки клієнтів:
+      </h2>
+    </div>
+    <div class="reviews__wrapper">
+      <div class="reviews__slider">
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Доброго вечора. Дякую за оперативність, оплату перерахували. Було приємно співпрацювати”.
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Арміне А.
+              </div>
+              <div class="reviews__service">
+                Переклад та нотаріальне завірення паспорту та свідоцтва про народження
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Привіт, документи отримала👌дякую, все супер🙌”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Володимир Д.
+              </div>
+              <div class="reviews__service">
+                Переклад витягу з єдиного державного реєстру
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Добрый день, спасибо за перевод, в миграционке все приняли без проблем. Хорошего дня👍”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            </img>
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Алізада Н.
+              </div>
+              <div class="reviews__service">
+                Переклад паспорту для міграційної служби та нотаріальне завірення
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Все добре і швидко. Ціна приємна. Дякую.”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Тигран М.
+              </div>
+              <div class="reviews__service">
+                Переклад нотаріального завірення
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Доброго вечора. Дякую за оперативність, оплату перерахували. Було приємно співпрацювати”.
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Арміне А.
+              </div>
+              <div class="reviews__service">
+                Переклад та нотаріальне завірення паспорту та свідоцтва про народження
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Привіт, документи отримала👌дякую, все супер🙌”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Володимир Д.
+              </div>
+              <div class="reviews__service">
+                Переклад витягу з єдиного державного реєстру
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Добрый день, спасибо за перевод, в миграционке все приняли без проблем. Хорошего дня👍”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Алізада Н.
+              </div>
+              <div class="reviews__service">
+                Переклад паспорту для міграційної служби та нотаріальне завірення
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__top">
+            <div class="reviews__stars">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+              <img class="reviews__star" src="./images/star.svg" alt="">
+            </div>
+            <div class="reviews__text">
+              “Все добре і швидко. Ціна приємна. Дякую.”
+            </div>
+          </div>
+          <div class="reviews__user">
+            <img class="reviews__photo" src="./images/vova.svg">
+            <div class="reviews__info">
+              <div class="reviews__name">
+                Тигран М.
+              </div>
+              <div class="reviews__service">
+                Переклад нотаріального завірення
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2 class="about__title title">
+        Про компанію:
+      </h2>
+      <div class="about__inner">
+        <div class="about__bureau">
+          <div class="about__bureau-title">
+            Бюро перекладів «АЗГ» 
+          </div>
+          <div class="about__bureau-text">
+            Пропонує широке коло перекладацьких послуг у Києві та по всій Україні. Ми є сполучною ланкою між Вами та
+            світом:
+            діловими партнерами, клієнтами, державними органами, іноземними друзями та суспільством в цілому. І це дуже
+            міцна та
+            надійна ланка, оскільки ми ставимося до своєї роботи із максимальною відповідальністю, а також щиро любимо
+            свою справу.
+          </div>
+          <div class="about__bureau-partners">
+            Наші партнери:
+          </div>
+          <div class="about__bureau-partner">
+            “Юридична компанія АКСІОМА”
+          </div>
+        </div>
+        <div class="about__benefits">
+          <div class="about__benefits-title">
+            Переваги співпраці з нами:
+          </div>
+          <div class="about__items">
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Якісно</div>
+              </div>
+              <p class="about__item-text">
+                переклади здійснюються висококваліфікованими спеціалістами – знавцями своєї справи
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Надійно</div>
+              </div>
+              <p class="about__item-text">
+                ми завжди дотримуємося дедлайнів, стандартів якості та норм ділової етики
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Вигідно</div>
+              </div>
+              <p class="about__item-text">
+                увесь спектр перекладацьких послуг надається з найкращим співвідношенням ціни та якості
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Професійно</div>
+              </div>
+              <p class="about__item-text">
+                письмовий та усний переклад у будь-якій мовній парі
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Індивідуально</div>
+              </div>
+              <p class="about__item-text">
+                підхід до кожного клієнта
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Швидко</div>
+              </div>
+              <p class="about__item-text">
+                термінове виконання перекладів
+              </p>
+            </div>
+            <div class="about__item">
+              <div class="about__item-left">
+                <img class="about__item-left--img" src="./images/check.svg" alt="">
+                <div class="about__item-left--descr">Приємно</div>
+              </div>
+              <p class="about__item-text">
+                знижки при замовленні перекладу більше 12 сторінок
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="arrow-up arrow-up-infos" href="#">
+    </a>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__socials">
+          <div class="footer__socials-find">
+            <div class="footer__socials-text">
+              Шукай нас:
+            </div>
+            <a class="footer__social" href="#">
+              <img class="footer__socials-img" src="./images/instagram.svg" alt="">
+            </a>
+            <a class="footer__social" href="#">
+              <img class="footer__socials-img" src="./images/facebook.svg" alt="">
+            </a>
+          </div>
+          <div class="footer__socials-call">
+            <div class="footer__socials-text">
+              Пиши/дзвони:
+            </div>
+            <div class="footer__socials-wrapper">
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/viber.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/whatsapp.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/telegram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title">
+            Контакти
+          </div>
+          <div class="footer__contacts-top">
+            <a class="footer__contacts-phone" href="tel:380663016846">
+              +380 (66) 301-68-46
+            </a>
+            <a class="footer__contacts-phone" href="tel:380978496492">
+               +380 (97) 849-649-2
+            </a>
+            <a class="footer__contacts-mail footer__contacts-phone" href="mailto:azg.translation@gmail.com">
+               azg.translation@gmail.com
+            </a>
+          </div>
+          <div class="footer__block-wrapper">
+            <div class="footer__contacts-text">
+              Завітайте до нашого офісу:
+            </div>
+            <div class="footer__contacts-address">
+              м. Київ, вул. Саксаганського 133А
+            </div>
+          </div>
+        </div>
+        <p class="footer__right-text">
+          “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
+          нашим Бюро
+          перекладів, відповідають найвищим стандартам якості.”
+        </p>
+      </div>
+      <div class="footer__mobile-wrapper">
+        <div class="footer__contacts-text">
+          Завітайте до нашого офісу:
+        </div>
+        <div class="footer__contacts-address">
+          м. Київ, вул. Саксаганського 133А
+        </div>
+      </div>
+    </div>
+    <a class="footer__logo" href="#">
+      <img src="./images/logo.png" alt="">
+    </a>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

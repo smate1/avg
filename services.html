@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="UKR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AVG</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .menu__item-link--services::after {
+    transform: scaleX(1);
+  }
+</style>
+
+<body>
+  <div class="modal modal-thanks" id="modal-thanks">
+    <div class="modal__content">
+      <div class="modal__title modal__title-thank">Дякуємо за замовлення!</div>
+      <button class="order-btn" id="go-home">До головної</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">
+      <img src="./images/modal-arrow.svg" alt="">
+    </button>
+    <div class="modal__content">
+      <div class="modal__title modal__title-top">Замовити послугу</div>
+      <div class="modal__service" id="modal-service">Усний переклад</div>
+      <div class="modal__descr">*Будь ласка, заповніть інформацію для замовлення послуги</div>
+      <form class="modal__form">
+        <label class="modal__top" for="">
+          <input class="modal__input" type="text" placeholder="Ім’я" required>
+          <input class="modal__input" type="text" placeholder="Прізвище*" required>
+        </label>
+        <input class="modal__input" type="email" placeholder="Пошта*" required>
+        <input class="modal__input" type="number" placeholder="Номер телефону*" required>
+        <textarea class="modal__textarea" name="comments" placeholder="Комментарі до замовлення"></textarea>
+        <button class="order-btn" id="order-btn">Замовити</button>
+      </form>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--main" href="./index.html">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--about" href="./about.html">
+              Про нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--services" href="./services.html">
+              Послуги
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--contacts" href="#footer">
+              Контакти
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link menu__item-link--parnters" href="./about.html#partners">
+              Партнери
+            </a>
+          </li>
+        </ul>
+        <div class="header__lang">
+          <a id="eng-lang" class="header__lang-link" href="#">
+            ENG
+          </a>
+          <a id="ukr-lang" class="header__lang-link" href="#">
+            /UKR
+          </a>
+          <a id="rus-lang" class="header__lang-link" href="#">
+            /RUS
+          </a>
+          <a id="arm-lang" class="header__lang-link" href="#">
+            /ARM
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="services__wrapper">
+      <blockquote class="services__blockquote">
+        «Найстрашніше - прогавити прекрасне»
+      </blockquote>
+    </div>
+  </header>
+  <section class="facilities">
+    <div class="container">
+      <div class="facilities__inner">
+        <div class="facilities__left">
+          <div class="facilities__title">
+            Наші послуги
+          </div>
+          <div class="facilities__text">
+            Штат нашої компанії – це широке коло дипломованих перекладачів та професіоналів, які відмінно володіють
+            багатьма мовами,
+            а також знають стандарти та правила перекладу різноманітної документації.
+          </div>
+        </div>
+        <div class="facilities__items">
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-1.svg" alt="">
+            <p class="facilities__descr">
+              Усний
+              переклад
+            </p>
+          </div>
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-2.svg" alt="">
+            <p class="facilities__descr">
+              Письмовий
+              переклад
+            </p>
+          </div>
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-3.svg" alt="">
+            <p class="facilities__descr">
+              Нотаріальне
+              посвідчення
+            </p>
+          </div>
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-4.svg" alt="">
+            <p class="facilities__descr">
+              Апостиль/
+              легалізація
+            </p>
+          </div>
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-5.svg" alt="">
+            <p class="facilities__descr">
+              Довідка
+              про несудимість
+            </p>
+          </div>
+          <div class="facilities__item">
+            <img class="facilities__img" src="./images/services-6.svg" alt="">
+            <p class="facilities__descr">
+              Міграційні
+              консультації
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="infos">
+    <div class="page-container">
+      <div class="infos__items">
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-1.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Усний переклад
+            </div>
+            <ul class="infos__list">
+              <li class="infos__list-item">
+                Усний синхронний переклад.
+              </li>
+              <li class="infos__list-item">
+                Усний послідовний переклад.
+              </li>
+              <li class="infos__list-item">
+                Участь дипломованого перекладача для вчинення нотаріальних дій, нотаріального посвідчення перекладів.
+                (від 600 грн)
+              </li>
+              <li class="infos__list-item">
+                Організація усних перекладів на заходах будь-якого рівня, а також ділових переговорах з іноземними
+                партнерами і
+                клієнтами. (від 800 грн)
+              </li>
+              <li class="infos__list-item">
+                Послуги гіда-перекладача. (від 1000 грн/год)
+
+              </li>
+              <li class="infos__list-item">
+                Переклад під час телефонних переговорів. (300грн/год)
+              </li>
+              <li class="infos__list-item">
+                Зустріч в аеропорту та супровід іноземних гостей/делегацій. (від 2000 грн)
+              </li>
+            </ul>
+            <button class="infos__btn" id="order-interpretation">
+              Замовити
+            </button>
+          </div>
+        </div>
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-2.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Письмовий переклад
+            </div>
+            <ul class="infos__list">
+              <li class="infos__list-item">
+                Вартість: Письмовий переклад тексту оцінюється на підставі вартості умовної сторінки, що містить 1800
+                знаків. Ціна
+                формується в залежності від мови, спрямованості і складності перекладу, його обсягу, бажаних термінів та
+                інших нюансів.
+                (від 250 грн/стр). Вартість редагування та коректорської правки включається в загальну вартість
+                перекладу. Для отримання
+                інформації щодо вартості та термінів здійснення перекладу Ви можете відправити ваш документ на нашу
+                електронну адресу,
+                вказавши при цьому побажання стосовно термінів перекладу і варіантів посвідчення перекладу... після
+                ознайомлення нашими
+                фахівцями з документом, Ви будете інформовані про умови виконання конкретної роботи. При необхідності,
+                ми також можемо
+                супроводжувати нотаріальне посвідчення Вашого перекладу у наших нотаріусів.
+              </li>
+              <li class="infos__list-item">
+                Доставка: Бюро перекладів «АЗГ» використовує в своїй діяльності усі можливі засоби зв'язку і доставки.
+                Ви можете
+                отримати переклад тексту як по електронній пошті, так і за допомогою кур'єрської служби.
+              </li>
+            </ul>
+            <button class="infos__btn" id="order-written">
+              Замовити
+            </button>
+          </div>
+        </div>
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-3.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Нотаріальне посвідчення
+            </div>
+            <ul class="infos__list">
+              <li class="infos__list-item">
+                Ми також супроводжуємо процедуру нотаріального посвідчення перекладів документів у нотаріуса. Наша
+                компанія працює з
+                багатьма нотаріусами Києва і може допомогти в нотаріальному посвідченні перекладу будь-якого документу,
+                з будь-якої та
+                на будь-яку мову.
+              </li>
+            </ul>
+            <button class="infos__btn" id="order-notarization">
+              Замовити
+            </button>
+          </div>
+        </div>
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-4.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Апостиль/легалізація
+            </div>
+            <ul class="infos__list">
+              <li class="infos__list-item">
+                Для використання за кордоном документів, виданих на території України, необхідно апостилювання або
+                легалізація даних
+                документів (якщо інше не передбачено міжнародними актами), в залежності від того, в якій країні
+                планується використання
+                документа.
+              </li>
+              <li class="infos__list-item">
+                Для отримання інформації щодо необхідності апостилювання/легалізації певного документа, а також вартості
+                та термінів
+                надання даної послуги, Ви можете відправити Ваш документ на нашу електронну адресу, вказавши країну, в
+                якій планується
+                використання документа… після ознайомлення нашими фахівцями з документом, Ви будете інформовані по
+                умовам виконання
+                конкретної роботи.
+              </li>
+            </ul>
+            <button class="infos__btn" id="order-appostille">
+              Замовити
+            </button>
+          </div>
+        </div>
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-5.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Довідка про несудимість
+            </div>
+            <div class="infos__list-text">
+              Бюро перекладів «АЗГ» допоможе Вам (громадянам України та іноземним громадянам) в отриманні довідки про
+              відсутність
+              судимості на території України, в терміновому порядку.
+              Для отримання довідки про несудимість в Україні з нашою допомогою, а також інформації щодо вартості та
+              термінів надання
+              даної послуги, Вам необхідно відправити на нашу електронну адресу:
+            </div>
+            <ul class="infos__list">
+              <li class="infos__list-item">
+                ксерокопію паспорта (основна сторінка з фотографією);
+              </li>
+              <li class="infos__list-item">
+                інформацію про те, для чого необхідна довідка (наприклад: для візи, для оформлення на роботу, оформлення
+                громадянства,
+                оформлення посвідки на проживання, для виїзду за кордон тощо).
+              </li>
+            </ul>
+            <button class="infos__btn" id="order-record">
+              Замовити
+            </button>
+          </div>
+        </div>
+        <div class="infos__item">
+          <img class="infos__img" src="./images/services-6.svg" alt="">
+          <div class="infos__content">
+            <div class="infos__title">
+              Міграційні консультації
+            </div>
+            <div class="infos__list-text infos__list-text--company">
+              Бюро перекладів «АЗГ» активно співпрацює з <span>Юридичною компанією «Аксіома»</span> з питань надання
+              допомоги іноземним громадянам,
+              в консультуванні, оформленні та отриманні будь-яких документів на території України.
+            </div>
+            <button class="infos__btn" id="order-consultations">
+              Замовити
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="arrow-up arrow-up-infos" href="#">
+    </a>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__socials">
+          <div class="footer__socials-find">
+            <div class="footer__socials-text">
+              Шукай нас:
+            </div>
+            <a class="footer__social" href="#">
+              <img class="footer__socials-img" src="./images/instagram.svg" alt="">
+            </a>
+            <a class="footer__social" href="#">
+              <img class="footer__socials-img" src="./images/facebook.svg" alt="">
+            </a>
+          </div>
+          <div class="footer__socials-call">
+            <div class="footer__socials-text">
+              Пиши/дзвони:
+            </div>
+            <div class="footer__socials-wrapper">
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/viber.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/whatsapp.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img class="footer__socials-img" src="./images/telegram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title">
+            Контакти
+          </div>
+          <div class="footer__contacts-top">
+            <a class="footer__contacts-phone" href="tel:380663016846">
+              +380 (66) 301-68-46
+            </a>
+            <a class="footer__contacts-phone" href="tel:380978496492">
+               +380 (97) 849-649-2
+            </a>
+            <a class="footer__contacts-mail footer__contacts-phone" href="mailto:azg.translation@gmail.com">
+               azg.translation@gmail.com
+            </a>
+          </div>
+          <div class="footer__contacts-text">
+            Завітайте до нашого офісу:
+          </div>
+          <div class="footer__contacts-address">
+            м. Київ, вул. Саксаганського 133А
+          </div>
+        </div>
+        <p class="footer__right-text">
+          “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
+          нашим
+          Бюро
+          перекладів, відповідають найвищим стандартам якості.”
+        </p>
+      </div>
+    </div>
+    <a class="footer__logo" href="#">
+      <img src="./images/logo.png" alt="">
+    </a>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

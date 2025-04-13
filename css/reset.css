@@ -31,6 +31,16 @@ html {
 html {
 	scroll-behavior: smooth;
 }
+a {
+    text-decoration: none; /* Вимикаємо підкреслення */
+    color: inherit; /* Зберігаємо колір тексту */
+    transition: none; /* Вимикаємо анімацію */
+}
+
+a:focus, a:hover {
+    background-color: blue; /* Синє підсвічування */
+    color: white; /* Колір тексту при підсвічуванні */
+}
 
 .main {
 	position: relative;

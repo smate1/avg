@@ -264,10 +264,3 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	})
 })
-
-
-
-
-
-
-

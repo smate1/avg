@@ -36,6 +36,7 @@ a {
     color: inherit; /* Зберігаємо колір тексту */
     transition: none;
     outline: none;
+    background: transparent;
 }
 .main {
 	position: relative;
@@ -57,12 +58,7 @@ li {
 	color: inherit;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-	outline: none;
-}
+
 
 * {
   -webkit-tap-highlight-color: transparent; /* мобільні браузери */

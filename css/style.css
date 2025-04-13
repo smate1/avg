@@ -721,6 +721,10 @@ body {
 .infos__item {
 	padding-top: 155px;
 }
+
+.infos__item.active{
+	padding-top: 0;
+}
 .infos__item {
 	display: flex;
 	align-items: start;

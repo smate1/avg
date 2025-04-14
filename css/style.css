@@ -1853,6 +1853,9 @@ a {
 	.services__item-text {
 		font-size: 15px;
 	}
+	.services__item-text--less{
+		font-size: 11px;
+	}
 }
 @media (max-width: 380px) {
 	.modal,

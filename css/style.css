@@ -1312,6 +1312,15 @@ a {
 	display: none;
 }
 
+.order-btn{
+	color: #fff !important;
+}
+
+@media (max-width: 1800px) {
+	.header__title-arm #br-first {
+		display: block;
+	}
+}
 @media (max-width: 1400px) {
 	.info__items {
 		display: block;
@@ -1324,11 +1333,6 @@ a {
 	}
 	.info__items .info__item:nth-child(3) {
 		justify-self: end;
-	}
-}
-@media (max-width: 1800px) {
-	.header__title-arm #br-first {
-		display: block;
 	}
 }
 @media (max-width: 1250px) {

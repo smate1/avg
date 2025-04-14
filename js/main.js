@@ -100,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		modalThanks?.classList.add('show')
 	})
 
-	goHomeBtn?.addEventListener('click', function () {
-		modalThanks?.classList.remove('show')
-		modalOverlay.classList.remove('show')
-		window.location.href = 'index.html'
-	})
+	// goHomeBtn?.addEventListener('click', function () {
+	// 	modalThanks?.classList.remove('show')
+	// 	modalOverlay.classList.remove('show')
+	// 	window.location.href = 'index.html'
+	// })
 })
 
 document.addEventListener('DOMContentLoaded', function () {

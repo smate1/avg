@@ -1511,6 +1511,9 @@ a {
 		height: 90px;
 		margin-bottom: 25px;
 	}
+	.modal-close img{
+		width: 30px;
+	}
 	.modal__title {
 		font-size: 24px;
 		margin-bottom: 20px;

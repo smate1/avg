@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="UKR">
+<html lang="ARM">
 
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,7 @@
   .menu__item-link--services::after {
     transform: scaleX(1);
   }
-  #ukr-lang{
+  #arm-lang{
     color: #932b2b;
   }
 </style>
@@ -32,8 +32,8 @@
 <body>
   <div class="modal modal-thanks" id="modal-thanks">
     <div class="modal__content">
-      <div class="modal__title modal__title-thank">Дякуємо за замовлення!</div>
-      <button class="order-btn" id="go-home">До головної</button>
+      <div class="modal__title modal__title-thank">Շնորհակալություն պատվերի համար!</div>
+      <button class="order-btn" id="go-home">Դեպի գլխավոր էջ</button>
     </div>
   </div>
 
@@ -43,18 +43,18 @@
       <img src="./images/modal-arrow.svg" alt="">
     </button>
     <div class="modal__content">
-      <div class="modal__title modal__title-top">Замовити послугу</div>
-      <div class="modal__service" id="modal-service">Усний переклад</div>
-      <div class="modal__descr">*Будь ласка, заповніть інформацію для замовлення послуги</div>
+      <div class="modal__title modal__title-top">ատվիրել ծառայություն</div>
+      <div class="modal__service" id="modal-service-arm">Բանավոր թարգմանություն</div>
+      <div class="modal__descr">*Խնդրում ենք լրացնել տեղեկատվությունը ծառայություն պատվիրելու համար</div>
       <form class="modal__form">
         <label class="modal__top" for="">
-          <input class="modal__input" type="text" placeholder="Ім’я" required>
-          <input class="modal__input" type="text" placeholder="Прізвище*" required>
+          <input class="modal__input" type="text" placeholder="Անուն" required>
+          <input class="modal__input" type="text" placeholder="Ազգանուն*" required>
         </label>
-        <input class="modal__input" type="email" placeholder="Пошта*" required>
-        <input class="modal__input" type="number" placeholder="Номер телефону*" required>
-        <textarea class="modal__textarea" name="comments" placeholder="Комментарі до замовлення"></textarea>
-        <button class="order-btn" id="order-btn">Замовити</button>
+        <input class="modal__input" type="email" placeholder="Էլ․ փոստ*" required>
+        <input class="modal__input" type="number" placeholder="Հեռախոսահամար*" required>
+        <textarea class="modal__textarea" name="comments" placeholder="Մեկնաբանություններ պատվերի վերաբերյալ"></textarea>
+        <button class="order-btn" id="order-btn">Պատվիրել</button>
       </form>
     </div>
   </div>
@@ -62,28 +62,28 @@
   <header class="header">
     <ul class="mobile__menu">
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./index.html">
-          Головна
+        <a class="mobile__menu-link" href="./index-arm.html">
+          Գլխավոր
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./about.html">
-          Про нас
+        <a class="mobile__menu-link" href="./about-arm.html">
+          Մեր մասին
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./services.html">
-          Послуги
+        <a class="mobile__menu-link" href="./services-arm.html">
+          Ծառայություններ
         </a>
       </li>
       <li class="mobile__menu-item">
         <a class="mobile__menu-link" href="#footer">
-          Контакти
+          Կոնտակտներ
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./about.html#partners">
-          Партнери
+        <a class="mobile__menu-link" href="./about-arm.html#partners">
+          Գործընկերներ
         </a>
       </li>
     </ul>
@@ -101,7 +101,7 @@
         <img src="./images/facebook.svg" alt="">
       </a>
       <div class="custom-select-wrapper">
-        <div class="custom-select-trigger">UKR</div>
+        <div class="custom-select-trigger">ARM</div>
         <div class="custom-options">
           <a href="./services.html" class="custom-option" data-value="UKR">UKR</a>
           <a href="./services-en.html" class="custom-option" data-value="ENG">ENG</a>
@@ -109,7 +109,7 @@
           <a href="./services-arm.html" class="custom-option" data-value="ARM">ARM</a>
         </div>
       </div>
-      <input type="hidden" name="language" id="language-input" value="UKR">
+      <input type="hidden" name="language" id="language-input" value="ARM">
     </div>
     <div class="container">
       <div class="header__top">
@@ -118,28 +118,28 @@
         </a>
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--main" href="./index.html">
-              Головна
+            <a class="menu__item-link menu__item-link--main" href="./index-arm.html">
+              Գլխավոր
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--about" href="./about.html">
-              Про нас
+            <a class="menu__item-link menu__item-link--about" href="./about-arm.html">
+              Մեր մասին
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--services" href="./services.html">
-              Послуги
+            <a class="menu__item-link menu__item-link--services" href="./services-arm.html">
+              Ծառայություններ
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__item-link menu__item-link--contacts" href="#footer">
-              Контакти
+              Կոնտակտներ
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--parnters" href="./about.html#partners">
-              Партнери
+            <a class="menu__item-link menu__item-link--parnters" href="./about-arm.html#partners">
+              Գործընկերներ
             </a>
           </li>
         </ul>
@@ -161,44 +161,44 @@
     </div>
     <div class="services__wrapper">
       <blockquote class="services__blockquote">
-        «Найстрашніше - прогавити прекрасне»
+        «Յուրաքանչյուր բառ ունի նշանակություն»
       </blockquote>
     </div>
   </header>
   <div class="services-mobile">
     <div class="container">
       <h2 class="services__title-mobile">
-        Наші послуги:
+        Մեր ծառայությունները.
       </h2>
       <ul class="services__menu">
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#interpretation">
-            Усний переклад
+            Բանավոր թարգմանություն
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#written">
-            Письмовий переклад
+            Գրավոր թարգմանություն
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#notarization">
-            Нотаріальне посвідчення
+            Նոտարական վավերացում
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#appostille">
-            Апостиль/легалізація
+            Ապոստիլ/օրինականացում
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#record">
-            Довідка про несудимість
+            Դատվածության բացակայության տեղեկանք
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#consultations">
-            Міграційні косультації
+            Միգրացիոն խորհրդատվություն
           </a>
         </li>
       </ul>
@@ -209,55 +209,49 @@
       <div class="facilities__inner">
         <div class="facilities__left">
           <div class="facilities__title">
-            Наші послуги
+            Մեր ծառայությունները.
           </div>
           <div class="facilities__text">
-            Штат нашої компанії – це широке коло дипломованих перекладачів та професіоналів, які відмінно володіють
-            багатьма мовами,
-            а також знають стандарти та правила перекладу різноманітної документації.
+            Մեր ընկերության աշխատակազմը բաղկացած է վավերացված թարգմանիչների և մասնագետների լայն շրջանակից, ովքեր ազատ տիրապետում են.
+            շատ լեզուներով
+            ինչպես նաև գիտեն տարբեր փաստաթղթերի թարգմանության չափանիշներն ու կանոնները:
           </div>
         </div>
         <div class="facilities__items">
           <a href="#interpretation" class="facilities__item">
             <img class="facilities__img" src="./images/services-1.svg" alt="">
             <p class="facilities__descr">
-              Усний
-              переклад
+              Բանավոր թարգմանություն
             </p>
           </a>
           <a href="#written" class="facilities__item">
             <img class="facilities__img" src="./images/services-2.svg" alt="">
             <p class="facilities__descr">
-              Письмовий
-              переклад
+              Գրավոր թարգմանություն
             </p>
           </a>
           <a href="#notarization" class="facilities__item">
             <img class="facilities__img" src="./images/services-3.svg" alt="">
             <p class="facilities__descr">
-              Нотаріальне
-              посвідчення
+              Նոտարական վավերացում
             </p>
           </a>
           <a href="#appostille" class="facilities__item">
             <img class="facilities__img" src="./images/services-4.svg" alt="">
             <p class="facilities__descr">
-              Апостиль/
-              легалізація
+              Ապոստիլ/օրինականացում
             </p>
           </a>
           <a href="#record" class="facilities__item">
             <img class="facilities__img" src="./images/services-5.svg" alt="">
             <p class="facilities__descr">
-              Довідка
-              про несудимість
+              Դատվածության բացակայության տեղեկանք
             </p>
           </a>
           <a href="#consultations" class="facilities__item">
             <img class="facilities__img" src="./images/services-6.svg" alt="">
             <p class="facilities__descr">
-              Міграційні
-              консультації
+              Միգրացիոն խորհրդատվություն
             </p>
           </a>
         </div>
@@ -271,41 +265,40 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-1.svg" alt="">
             <div class="infos__title-mobile">
-              Усний переклад
+              Բանավոր թարգմանություն
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Усний переклад
+              Բանավոր թարգմանություն
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Усний синхронний переклад.
+                Համաժամանակյա մեկնաբանություն.
               </li>
               <li class="infos__list-item">
-                Усний послідовний переклад.
+                Հետևողական մեկնաբանություն.
               </li>
               <li class="infos__list-item">
-                Участь дипломованого перекладача для вчинення нотаріальних дій, нотаріального посвідчення перекладів.
+                Նոտարական գործողությունների համար վավերացված թարգմանչի մասնակցություն, թարգմանությունների նոտարական վավերացում.
               </li>
               <li class="infos__list-item">
-                Організація усних перекладів на заходах будь-якого рівня, а також ділових переговорах з іноземними
-                партнерами і
-                клієнтами.
+                Թարգմանության կազմակերպում ցանկացած մակարդակի միջոցառումների, ինչպես նաև բիզնես բանակցություններ արտասահմանյան հետ
+                գործընկերներ և
+                հաճախորդներ
               </li>
               <li class="infos__list-item">
-                Послуги гіда-перекладача.
-
+                Էքսկուրսավար-թարգմանչի ծառայություններ.
               </li>
               <li class="infos__list-item">
-                Переклад під час телефонних переговорів.
+                Թարգմանություն հեռախոսային խոսակցությունների ժամանակ.
               </li>
               <li class="infos__list-item">
-                Зустріч в аеропорту та супровід іноземних гостей/делегацій.
+                Հանդիպում օդանավակայանում և օտարերկրյա հյուրերի/պատվիրակությունների ուղեկցում։
               </li>
             </ul>
             <button class="infos__btn" id="order-interpretation">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -313,36 +306,36 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-2.svg" alt="">
             <div class="infos__title-mobile">
-              Письмовий переклад
+              Գրավոր թարգմանություն
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Письмовий переклад
+              Գրավոր թարգմանություն
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Вартість: Письмовий переклад тексту оцінюється на підставі вартості умовної сторінки, що містить 1800
-                знаків. Ціна
-                формується в залежності від мови, спрямованості і складності перекладу, його обсягу, бажаних термінів та
-                інших нюансів. Вартість редагування та коректорської правки включається в загальну вартість
-                перекладу. Для отримання
-                інформації щодо вартості та термінів здійснення перекладу Ви можете відправити ваш документ на нашу
-                електронну адресу,
-                вказавши при цьому побажання стосовно термінів перекладу і варіантів посвідчення перекладу... після
-                ознайомлення нашими
-                фахівцями з документом, Ви будете інформовані про умови виконання конкретної роботи. При необхідності,
-                ми також можемо
-                супроводжувати нотаріальне посвідчення Вашого перекладу у наших нотаріусів.
+              Արժեքը. Տեքստի գրավոր թարգմանությունը գնահատվում է 1800 պարունակող սովորական էջի արժեքի հիման վրա
+              նշաններ Գին
+              ձևավորվում է՝ կախված թարգմանության լեզվից, ուղղությունից և բարդությունից, դրա ծավալից, ցանկալի տերմիններից և
+              այլ նրբերանգներ:Խմբագրման և սրբագրման ծախսերը ներառված են ընդհանուր արժեքի մեջ:
+              թարգմանություն Ստանալու համար
+              Թարգմանության արժեքի և ժամկետների մասին տեղեկությունների համար կարող եք ուղարկել ձեր փաստաթուղթը մեր հասցեին
+              էլփոստի հասցե,
+              նշելով ձեր ցանկությունները թարգմանության պայմանների և թարգմանության վավերացման տարբերակների վերաբերյալ... հետո
+              ծանոթացում մեր
+              փաստաթղթով մասնագետներ, ձեզ կտեղեկացնեն կոնկրետ աշխատանք կատարելու պայմանների մասին։ Անհրաժեշտության դեպքում,
+              մենք էլ կարող ենք
+              ուղեկցեք ձեր թարգմանության նոտարական վավերացմանը մեր նոտարների հետ:
               </li>
               <li class="infos__list-item">
-                Доставка: Бюро перекладів «АЗГ» використовує в своїй діяльності усі можливі засоби зв'язку і доставки.
-                Ви можете
-                отримати переклад тексту як по електронній пошті, так і за допомогою кур'єрської служби.
+                Առաքում. «ԱԶԳ» թարգմանչական բյուրոն իր գործունեության ընթացքում օգտագործում է կապի և առաքման բոլոր հնարավոր միջոցները:
+                դու կարող ես
+                ստանալ տեքստի թարգմանությունը ինչպես էլեկտրոնային փոստով, այնպես էլ սուրհանդակային ծառայության միջոցով:
               </li>
             </ul>
             <button class="infos__btn" id="order-written">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -350,24 +343,24 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-3.svg" alt="">
             <div class="infos__title-mobile">
-              Нотаріальне посвідчення
+              Նոտարական վկայական
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Нотаріальне посвідчення
+              Նոտարական վկայական
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Ми також супроводжуємо процедуру нотаріального посвідчення перекладів документів у нотаріуса. Наша
-                компанія працює з
-                багатьма нотаріусами Києва і може допомогти в нотаріальному посвідченні перекладу будь-якого документу,
-                з будь-якої та
-                на будь-яку мову.
+                Մենք նաև աջակցում ենք նոտարական փաստաթղթերի թարգմանությունների նոտարական վավերացման ընթացակարգին: Մեր
+                ընկերությունն աշխատում է
+                Կիևում շատ նոտարներ և կարող են օգնել ցանկացած փաստաթղթի թարգմանության նոտարական վավերացման հարցում,
+                ցանկացածից և
+                ցանկացած լեզվով.
               </li>
             </ul>
             <button class="infos__btn" id="order-notarization">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -375,33 +368,33 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-4.svg" alt="">
             <div class="infos__title-mobile">
-              Апостиль/легалізація
+              Ապոստիլ/օրինականացում
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Апостиль/легалізація
+              Ապոստիլ/օրինականացում
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Для використання за кордоном документів, виданих на території України, необхідно апостилювання або
-                легалізація даних
-                документів (якщо інше не передбачено міжнародними актами), в залежності від того, в якій країні
-                планується використання
-                документа.
+                Ուկրաինայում թողարկված փաստաթղթերի արտասահմանում օգտագործելու համար ապոստիլ կամ
+                տվյալների օրինականացում
+                փաստաթղթեր (եթե այլ բան նախատեսված չէ միջազգային ակտերով), կախված նրանից, թե որ երկիրն է
+                նախատեսված օգտագործումը
+                փաստաթուղթ
               </li>
               <li class="infos__list-item">
-                Для отримання інформації щодо необхідності апостилювання/легалізації певного документа, а також вартості
-                та термінів
-                надання даної послуги, Ви можете відправити Ваш документ на нашу електронну адресу, вказавши країну, в
-                якій планується
-                використання документа… після ознайомлення нашими фахівцями з документом, Ви будете інформовані по
-                умовам виконання
-                конкретної роботи.
+                Որոշակի փաստաթղթի ապոստիլի/օրինականացման անհրաժեշտության, ինչպես նաև արժեքի վերաբերյալ տեղեկատվություն ստանալու համար
+                և պայմաններ
+                ապահովելով այս ծառայությունը, դուք կարող եք ուղարկել ձեր փաստաթուղթը մեր էլ. հասցեին՝ նշելով երկիրը,մեջ
+                որը նախատեսված է
+                փաստաթղթի օգտագործումը… մեր մասնագետների կողմից փաստաթուղթը ուսումնասիրելուց հետո դուք կտեղեկացվեք դրա մասին
+                կատարման պայմանները
+                կոնկրետ աշխատանք։
               </li>
             </ul>
             <button class="infos__btn" id="order-appostille">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -409,33 +402,34 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-5.svg" alt="">
             <div class="infos__title-mobile">
-              Довідка про несудимість
+              Դատվածության բացակայության տեղեկանք
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Довідка про несудимість
+              Դատվածության բացակայության տեղեկանք
             </div>
             <div class="infos__list-text">
-              Бюро перекладів «АЗГ» допоможе Вам (громадянам України та іноземним громадянам) в отриманні довідки про
-              відсутність
-              судимості на території України, в терміновому порядку.
-              Для отримання довідки про несудимість в Україні з нашою допомогою, а також інформації щодо вартості та
-              термінів надання
-              даної послуги, Вам необхідно відправити на нашу електронну адресу:
+              «ԱԶԳ» թարգմանչական բյուրոն կօգնի ձեզ (Ուկրաինայի քաղաքացիներին և օտարերկրյա քաղաքացիներին) ստանալ վկայական.
+              բացակայությունը
+              քրեական գործ Ուկրաինայում, շտապ.
+              Մեր օգնությամբ Ուկրաինայում քրեական անցյալի բացակայության վկայական ձեռք բերելու համար, ինչպես նաև տեղեկություններ արժեքի
+              և
+              առաքման պայմանները
+              Այս ծառայության համար դուք պետք է ուղարկեք մեր էլ.
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                ксерокопію паспорта (основна сторінка з фотографією);
+                անձնագրի պատճենը (հիմնական էջը լուսանկարով);
               </li>
               <li class="infos__list-item">
-                інформацію про те, для чого необхідна довідка (наприклад: для візи, для оформлення на роботу, оформлення
-                громадянства,
-                оформлення посвідки на проживання, для виїзду за кордон тощо).
+                տեղեկատվություն այն մասին, թե ինչի համար է անհրաժեշտ վկայականը (օրինակ՝ վիզայի, աշխատանքի, գրանցման համար)
+                քաղաքացիություն,
+                (օրինակ՝ կացության թույլտվություն ստանալը, արտասահման մեկնելու համար և այլն):
               </li>
             </ul>
             <button class="infos__btn" id="order-record">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -443,20 +437,20 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-6.svg" alt="">
             <div class="infos__title-mobile">
-              Міграційні консультації
+              Միգրացիոն խորհրդատվություն
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Міграційні консультації
+              Միգրացիոն խորհրդատվություն
             </div>
             <div class="infos__list-text infos__list-text--company">
-              Бюро перекладів «АЗГ» активно співпрацює з <span>Юридичною компанією «Аксіома»</span> з питань надання
-              допомоги іноземним громадянам,
-              в консультуванні, оформленні та отриманні будь-яких документів на території України.
+              ԱԶԳ թարգմանչական գործակալությունը ակտիվորեն համագործակցում է <span>Աքսիոմա իրավաբանական ընկերության</span>-ի հետ
+              օգնություն օտարերկրյա քաղաքացիներին,
+              Ուկրաինայի տարածքում ցանկացած փաստաթղթերի խորհրդատվության, մշակման և ձեռքբերման ժամանակ:
             </div>
             <button class="infos__btn" id="order-consultations">
-              Замовити
+              Պատվիրել
             </button>
           </div>
         </div>
@@ -471,7 +465,7 @@
         <div class="footer__socials">
           <div class="footer__socials-find">
             <div class="footer__socials-text">
-              Шукай нас:
+              Գտեք մեզ:
             </div>
             <a class="footer__social" href="https://www.instagram.com/azg_ua/?igsh=ZXBwZnQ0c3V4NTZ1">
               <img class="footer__socials-img" src="./images/instagram.svg" alt="">
@@ -482,7 +476,7 @@
           </div>
           <div class="footer__socials-call">
             <div class="footer__socials-text">
-              Пиши/дзвони:
+              Գրեք/զանգահարեք:
             </div>
             <div class="footer__socials-wrapper">
               <a class="footer__social" href="#">
@@ -499,7 +493,7 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-title">
-            Контакти
+            Կոնտակտներ
           </div>
           <div class="footer__contacts-top">
             <a class="footer__contacts-phone" href="tel:380663016846">
@@ -514,25 +508,26 @@
           </div>
           <div class="footer__block-wrapper">
             <div class="footer__contacts-text">
-              Завітайте до нашого офісу:
+              Այցելեք մեր գրասենյակ:
             </div>
             <div class="footer__contacts-address">
-              м. Київ, вул. Саксаганського 133А
+              ք․ Կիև, Սաքսագանսկու փող․ 133Ա
             </div>
           </div>
         </div>
         <p class="footer__right-text">
-          “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
-          нашим Бюро
-          перекладів, відповідають найвищим стандартам якості.”
+          “Մենք համագործակցում ենք բացառապես իրենց ոլորտում պրոֆեսիոնալ թարգմանիչների հետ, հետևաբար նրանց կատարած
+          թարգմանություններն են
+          մեր Բյուրոն
+          թարգմանությունները համապատասխանում են որակի ամենաբարձր չափանիշներին:”
         </p>
       </div>
       <div class="footer__mobile-wrapper">
         <div class="footer__contacts-text">
-          Завітайте до нашого офісу:
+          Այցելեք մեր գրասենյակ:
         </div>
         <div class="footer__contacts-address">
-          м. Київ, вул. Саксаганського 133А
+          ք․ Կիև, Սաքսագանսկու փող․ 133Ա
         </div>
       </div>
     </div>

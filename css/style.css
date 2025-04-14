@@ -62,10 +62,11 @@ body {
 	gap: -2px;
 	display: flex;
 }
-#ukr-lang,
-.header__lang-link:active {
+.header__lang-link:active,
+.header__lang-link:focus {
 	color: #932b2b;
 }
+
 .header__lang-link {
 	color: rgba(110, 119, 100, 0.5);
 	font-family: Roboto;
@@ -1325,7 +1326,11 @@ a {
 		justify-self: end;
 	}
 }
-
+@media (max-width: 1800px){
+	.header__title-arm #br-first{
+		display: block;
+	}
+}
 @media (max-width: 1250px) {
 	.modal,
 	.modal-thanks {
@@ -1832,6 +1837,14 @@ a {
 }
 
 @media (max-width: 660px) {
+	#br-first{
+		display: none !important;
+	}
+
+	.header__title-arm{
+		white-space: wrap;
+	}
+	
 	.activity__img {
 		width: 100%;
 	}

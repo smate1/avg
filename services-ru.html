@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="UKR">
+<html lang="RUS">
 
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,8 @@
   .menu__item-link--services::after {
     transform: scaleX(1);
   }
-  #ukr-lang{
+
+  #rus-lang {
     color: #932b2b;
   }
 </style>
@@ -32,8 +33,8 @@
 <body>
   <div class="modal modal-thanks" id="modal-thanks">
     <div class="modal__content">
-      <div class="modal__title modal__title-thank">Дякуємо за замовлення!</div>
-      <button class="order-btn" id="go-home">До головної</button>
+      <div class="modal__title modal__title-thank">Спасибо за заказ!</div>
+      <button class="order-btn" id="go-home">На главную</button>
     </div>
   </div>
 
@@ -43,18 +44,18 @@
       <img src="./images/modal-arrow.svg" alt="">
     </button>
     <div class="modal__content">
-      <div class="modal__title modal__title-top">Замовити послугу</div>
-      <div class="modal__service" id="modal-service">Усний переклад</div>
-      <div class="modal__descr">*Будь ласка, заповніть інформацію для замовлення послуги</div>
+      <div class="modal__title modal__title-top">Заказать услугу</div>
+      <div class="modal__service" id="modal-service-ru">Устный перевод</div>
+      <div class="modal__descr">*Пожалуйста, заполните информацию для заказа услуги</div>
       <form class="modal__form">
         <label class="modal__top" for="">
-          <input class="modal__input" type="text" placeholder="Ім’я" required>
-          <input class="modal__input" type="text" placeholder="Прізвище*" required>
+          <input class="modal__input" type="text" placeholder="Имя" required>
+          <input class="modal__input" type="text" placeholder="Фамилия*" required>
         </label>
-        <input class="modal__input" type="email" placeholder="Пошта*" required>
-        <input class="modal__input" type="number" placeholder="Номер телефону*" required>
-        <textarea class="modal__textarea" name="comments" placeholder="Комментарі до замовлення"></textarea>
-        <button class="order-btn" id="order-btn">Замовити</button>
+        <input class="modal__input" type="email" placeholder="Почта*" required>
+        <input class="modal__input" type="number" placeholder="Номер телефона*" required>
+        <textarea class="modal__textarea" name="comments" placeholder="Комментарии к заказу"></textarea>
+        <button class="order-btn" id="order-btn">Заказать</button>
       </form>
     </div>
   </div>
@@ -62,28 +63,28 @@
   <header class="header">
     <ul class="mobile__menu">
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./index.html">
-          Головна
+        <a class="mobile__menu-link" href="./index-ru.html">
+          Главная
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./about.html">
-          Про нас
+        <a class="mobile__menu-link" href="./about-ru.html">
+          О нас
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./services.html">
-          Послуги
+        <a class="mobile__menu-link" href="./services-ru.html">
+          Услуги
         </a>
       </li>
       <li class="mobile__menu-item">
         <a class="mobile__menu-link" href="#footer">
-          Контакти
+          Контакты
         </a>
       </li>
       <li class="mobile__menu-item">
-        <a class="mobile__menu-link" href="./about.html#partners">
-          Партнери
+        <a class="mobile__menu-link" href="./about-ru.html#partners">
+          Партнеры
         </a>
       </li>
     </ul>
@@ -101,7 +102,7 @@
         <img src="./images/facebook.svg" alt="">
       </a>
       <div class="custom-select-wrapper">
-        <div class="custom-select-trigger">UKR</div>
+        <div class="custom-select-trigger">RUS</div>
         <div class="custom-options">
           <a href="./services.html" class="custom-option" data-value="UKR">UKR</a>
           <a href="./services-en.html" class="custom-option" data-value="ENG">ENG</a>
@@ -109,7 +110,7 @@
           <a href="./services-arm.html" class="custom-option" data-value="ARM">ARM</a>
         </div>
       </div>
-      <input type="hidden" name="language" id="language-input" value="UKR">
+      <input type="hidden" name="language" id="language-input" value="RUS">
     </div>
     <div class="container">
       <div class="header__top">
@@ -118,28 +119,28 @@
         </a>
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--main" href="./index.html">
-              Головна
+            <a class="menu__item-link menu__item-link--main" href="./index-ru.html">
+              Главная
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--about" href="./about.html">
-              Про нас
+            <a class="menu__item-link menu__item-link--about" href="./about-ru.html">
+              О нас
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--services" href="./services.html">
-              Послуги
+            <a class="menu__item-link menu__item-link--services" href="./services-ru.html">
+              Услуги
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__item-link menu__item-link--contacts" href="#footer">
-              Контакти
+              Контакты
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link menu__item-link--parnters" href="./about.html#partners">
-              Партнери
+            <a class="menu__item-link menu__item-link--parnters" href="./about-ru.html#partners">
+              Партнеры
             </a>
           </li>
         </ul>
@@ -161,44 +162,44 @@
     </div>
     <div class="services__wrapper">
       <blockquote class="services__blockquote">
-        «Найстрашніше - прогавити прекрасне»
+        «Самое страшное - упустить прекрасное»
       </blockquote>
     </div>
   </header>
   <div class="services-mobile">
     <div class="container">
       <h2 class="services__title-mobile">
-        Наші послуги:
+        Наши услуги:
       </h2>
       <ul class="services__menu">
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#interpretation">
-            Усний переклад
+            Устный перевод
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#written">
-            Письмовий переклад
+            Письменный перевод
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#notarization">
-            Нотаріальне посвідчення
+            Нотариальное удостоверение
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#appostille">
-            Апостиль/легалізація
+            Апостиль/легализация
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#record">
-            Довідка про несудимість
+            Справка о несудимости
           </a>
         </li>
         <li class="services__menu-item">
           <a class="services__menu-link" data-target="#consultations">
-            Міграційні косультації
+            Миграционные консультации
           </a>
         </li>
       </ul>
@@ -209,55 +210,56 @@
       <div class="facilities__inner">
         <div class="facilities__left">
           <div class="facilities__title">
-            Наші послуги
+            Наши услуги
           </div>
           <div class="facilities__text">
-            Штат нашої компанії – це широке коло дипломованих перекладачів та професіоналів, які відмінно володіють
-            багатьма мовами,
-            а також знають стандарти та правила перекладу різноманітної документації.
+            Штат нашей компании - это широкий круг дипломированных переводчиков и профессионалов, которые отлично
+            владеют
+            многими языками,
+            а также знают стандарты и правила перевода различной документации.
           </div>
         </div>
         <div class="facilities__items">
           <a href="#interpretation" class="facilities__item">
             <img class="facilities__img" src="./images/services-1.svg" alt="">
             <p class="facilities__descr">
-              Усний
-              переклад
+              Устный
+              перевод
             </p>
           </a>
           <a href="#written" class="facilities__item">
             <img class="facilities__img" src="./images/services-2.svg" alt="">
             <p class="facilities__descr">
-              Письмовий
-              переклад
+              Письменный
+              перевод
             </p>
           </a>
           <a href="#notarization" class="facilities__item">
             <img class="facilities__img" src="./images/services-3.svg" alt="">
             <p class="facilities__descr">
-              Нотаріальне
-              посвідчення
+              Нотариальное
+              удостоверение
             </p>
           </a>
           <a href="#appostille" class="facilities__item">
             <img class="facilities__img" src="./images/services-4.svg" alt="">
             <p class="facilities__descr">
               Апостиль/
-              легалізація
+              легализация
             </p>
           </a>
           <a href="#record" class="facilities__item">
             <img class="facilities__img" src="./images/services-5.svg" alt="">
             <p class="facilities__descr">
-              Довідка
-              про несудимість
+              Справка
+              о несудимости
             </p>
           </a>
           <a href="#consultations" class="facilities__item">
             <img class="facilities__img" src="./images/services-6.svg" alt="">
             <p class="facilities__descr">
-              Міграційні
-              консультації
+              Миграционные
+              консультации
             </p>
           </a>
         </div>
@@ -271,41 +273,42 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-1.svg" alt="">
             <div class="infos__title-mobile">
-              Усний переклад
+              Устный перевод
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Усний переклад
+              Устный перевод
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Усний синхронний переклад.
+                Устный синхронный перевод.
               </li>
               <li class="infos__list-item">
-                Усний послідовний переклад.
+                Устный последовательный перевод.
               </li>
               <li class="infos__list-item">
-                Участь дипломованого перекладача для вчинення нотаріальних дій, нотаріального посвідчення перекладів.
+                Участие дипломированного переводчика для совершения нотариальных действий, нотариального удостоверения
+                переводов.
               </li>
               <li class="infos__list-item">
-                Організація усних перекладів на заходах будь-якого рівня, а також ділових переговорах з іноземними
-                партнерами і
-                клієнтами.
+                Организация устных переводов на мероприятиях любого уровня, а также деловых переговорах с иностранными
+                партнерами
+                партнерами и
+                клиентами.
               </li>
               <li class="infos__list-item">
-                Послуги гіда-перекладача.
-
+                Услуги гида-переводчика.
               </li>
               <li class="infos__list-item">
-                Переклад під час телефонних переговорів.
+                Перевод во время телефонных переговоров.
               </li>
               <li class="infos__list-item">
-                Зустріч в аеропорту та супровід іноземних гостей/делегацій.
+                Встреча в аэропорту и сопровождение иностранных гостей/делегаций.
               </li>
             </ul>
             <button class="infos__btn" id="order-interpretation">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -313,36 +316,38 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-2.svg" alt="">
             <div class="infos__title-mobile">
-              Письмовий переклад
+              Письменный перевод
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Письмовий переклад
+              Письменный перевод
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Вартість: Письмовий переклад тексту оцінюється на підставі вартості умовної сторінки, що містить 1800
-                знаків. Ціна
-                формується в залежності від мови, спрямованості і складності перекладу, його обсягу, бажаних термінів та
-                інших нюансів. Вартість редагування та коректорської правки включається в загальну вартість
-                перекладу. Для отримання
-                інформації щодо вартості та термінів здійснення перекладу Ви можете відправити ваш документ на нашу
-                електронну адресу,
-                вказавши при цьому побажання стосовно термінів перекладу і варіантів посвідчення перекладу... після
-                ознайомлення нашими
-                фахівцями з документом, Ви будете інформовані про умови виконання конкретної роботи. При необхідності,
-                ми також можемо
-                супроводжувати нотаріальне посвідчення Вашого перекладу у наших нотаріусів.
+                Стоимость: Письменный перевод текста оценивается на основании стоимости условной страницы, содержащей
+                1800
+                знаков. Цена формируется в зависимости от языка
+                формируется в зависимости от языка, направленности и сложности перевода, его объема, желаемых сроков и
+                других нюансов. Стоимость редактирования и корректорской правки включается в общую стоимость
+                перевода. Для получения
+                информации о стоимости и сроках осуществления перевода Вы можете отправить ваш документ на наш
+                электронный адрес,
+                указав при этом пожелания относительно сроков перевода и вариантов заверения перевода... после
+                ознакомления нашими
+                специалистами с документом, Вы будете информированы об условиях выполнения конкретной работы. При
+                необходимости,
+                мы также можем
+                сопровождать нотариальное заверение Вашего перевода у наших нотариусов.
               </li>
               <li class="infos__list-item">
-                Доставка: Бюро перекладів «АЗГ» використовує в своїй діяльності усі можливі засоби зв'язку і доставки.
-                Ви можете
-                отримати переклад тексту як по електронній пошті, так і за допомогою кур'єрської служби.
+                Доставка: Бюро переводов «АЗГ» использует в своей деятельности все возможные средства связи и доставки.
+                Вы можете
+                получить перевод текста как по электронной почте, так и с помощью курьерской службы.
               </li>
             </ul>
             <button class="infos__btn" id="order-written">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -350,24 +355,24 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-3.svg" alt="">
             <div class="infos__title-mobile">
-              Нотаріальне посвідчення
+              Нотариальное удостоверение
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Нотаріальне посвідчення
+              Нотариальное удостоверение
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Ми також супроводжуємо процедуру нотаріального посвідчення перекладів документів у нотаріуса. Наша
-                компанія працює з
-                багатьма нотаріусами Києва і може допомогти в нотаріальному посвідченні перекладу будь-якого документу,
-                з будь-якої та
-                на будь-яку мову.
+                Мы также сопровождаем процедуру нотариального заверения переводов документов у нотариуса. Наша
+                компания работает со многими нотариусами Киева
+                многими нотариусами Киева и может помочь в нотариальном заверении перевода любого документа,
+                с любого и
+                на любой язык.
               </li>
             </ul>
             <button class="infos__btn" id="order-notarization">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -375,33 +380,36 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-4.svg" alt="">
             <div class="infos__title-mobile">
-              Апостиль/легалізація
+              Апостиль/легализация
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Апостиль/легалізація
+              Апостиль/легализация
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                Для використання за кордоном документів, виданих на території України, необхідно апостилювання або
-                легалізація даних
-                документів (якщо інше не передбачено міжнародними актами), в залежності від того, в якій країні
-                планується використання
+                Для использования за рубежом документов, выданных на территории Украины, необходимо апостилирование или
+                легализация данных
+                документов (если иное не предусмотрено международными актами), в зависимости от того, в какой стране
+                планируется использование
                 документа.
               </li>
               <li class="infos__list-item">
-                Для отримання інформації щодо необхідності апостилювання/легалізації певного документа, а також вартості
-                та термінів
-                надання даної послуги, Ви можете відправити Ваш документ на нашу електронну адресу, вказавши країну, в
-                якій планується
-                використання документа… після ознайомлення нашими фахівцями з документом, Ви будете інформовані по
-                умовам виконання
-                конкретної роботи.
+                Для получения информации о необходимости апостилирования/легализации определенного документа, а также
+                стоимости
+                и сроков
+                предоставления данной услуги, Вы можете отправить Ваш документ на наш электронный адрес, указав страну,
+                в которой
+                которой планируется
+                использование документа... после ознакомления нашими специалистами с документом, Вы будете информированы
+                по
+                условиям выполнения
+                конкретной работы.
               </li>
             </ul>
             <button class="infos__btn" id="order-appostille">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -409,33 +417,33 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-5.svg" alt="">
             <div class="infos__title-mobile">
-              Довідка про несудимість
+              Справка о несудимости
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Довідка про несудимість
+              Справка о несудимости
             </div>
             <div class="infos__list-text">
-              Бюро перекладів «АЗГ» допоможе Вам (громадянам України та іноземним громадянам) в отриманні довідки про
-              відсутність
-              судимості на території України, в терміновому порядку.
-              Для отримання довідки про несудимість в Україні з нашою допомогою, а також інформації щодо вартості та
-              термінів надання
-              даної послуги, Вам необхідно відправити на нашу електронну адресу:
+              Бюро переводов «АЗГ» поможет Вам (гражданам Украины и иностранным гражданам) в получении справки об
+              отсутствие
+              судимости на территории Украины, в срочном порядке.
+              Для получения справки о несудимости в Украине с нашей помощью, а также информации о стоимости и
+              сроков предоставления
+              данной услуги, Вам необходимо отправить на наш электронный адрес:
             </div>
             <ul class="infos__list">
               <li class="infos__list-item">
-                ксерокопію паспорта (основна сторінка з фотографією);
+                ксерокопию паспорта (основная страница с фотографией);
               </li>
               <li class="infos__list-item">
-                інформацію про те, для чого необхідна довідка (наприклад: для візи, для оформлення на роботу, оформлення
-                громадянства,
-                оформлення посвідки на проживання, для виїзду за кордон тощо).
+                информацию о том, для чего необходима справка (например: для визы, для оформления на работу, оформления
+                гражданства,
+                оформление вида на жительство, для выезда за границу и т.д.).
               </li>
             </ul>
             <button class="infos__btn" id="order-record">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -443,20 +451,21 @@
           <div class="infos__wrapper">
             <img class="infos__img" src="./images/services-6.svg" alt="">
             <div class="infos__title-mobile">
-              Міграційні консультації
+              Миграционные консультации
             </div>
           </div>
           <div class="infos__content">
             <div class="infos__title">
-              Міграційні консультації
+              Миграционные консультации
             </div>
             <div class="infos__list-text infos__list-text--company">
-              Бюро перекладів «АЗГ» активно співпрацює з <span>Юридичною компанією «Аксіома»</span> з питань надання
-              допомоги іноземним громадянам,
-              в консультуванні, оформленні та отриманні будь-яких документів на території України.
+              Бюро переводов «АЗГ» активно сотрудничает с <span>Юридической компанией «Аксиома»</span> по вопросам
+              оказания
+              помощи иностранным гражданам,
+              в консультировании, оформлении и получении любых документов на территории Украины.
             </div>
             <button class="infos__btn" id="order-consultations">
-              Замовити
+              Заказать
             </button>
           </div>
         </div>
@@ -471,7 +480,7 @@
         <div class="footer__socials">
           <div class="footer__socials-find">
             <div class="footer__socials-text">
-              Шукай нас:
+              Ищи нас:
             </div>
             <a class="footer__social" href="https://www.instagram.com/azg_ua/?igsh=ZXBwZnQ0c3V4NTZ1">
               <img class="footer__socials-img" src="./images/instagram.svg" alt="">
@@ -482,7 +491,7 @@
           </div>
           <div class="footer__socials-call">
             <div class="footer__socials-text">
-              Пиши/дзвони:
+              Пиши/звони:
             </div>
             <div class="footer__socials-wrapper">
               <a class="footer__social" href="#">
@@ -499,7 +508,7 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-title">
-            Контакти
+            Контакты
           </div>
           <div class="footer__contacts-top">
             <a class="footer__contacts-phone" href="tel:380663016846">
@@ -514,25 +523,27 @@
           </div>
           <div class="footer__block-wrapper">
             <div class="footer__contacts-text">
-              Завітайте до нашого офісу:
+              Посетите наш офис:
             </div>
             <div class="footer__contacts-address">
-              м. Київ, вул. Саксаганського 133А
+              м. Киев, ул. Саксаганского 133А
             </div>
           </div>
         </div>
         <p class="footer__right-text">
-          “Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані
+          “Мы сотрудничаем исключительно с переводчиками, которые являются профессионалами своего дела, а потому
+          переводы,
+          выполненные
           нашим Бюро
-          перекладів, відповідають найвищим стандартам якості.”
+          переводов, соответствуют самым высоким стандартам качества.”
         </p>
       </div>
       <div class="footer__mobile-wrapper">
         <div class="footer__contacts-text">
-          Завітайте до нашого офісу:
+          Посетите наш офис:
         </div>
         <div class="footer__contacts-address">
-          м. Київ, вул. Саксаганського 133А
+          м. Киев, ул. Саксаганского 133А
         </div>
       </div>
     </div>

@@ -34,9 +34,9 @@ const translations = {
 
     // Footer
     findUs: "Шукай нас:",
-    writeCall: "Пиши/дзвони:",
+    writeCall: "Գրեք/զանգահարեք:",
     visitOffice: "Завітайте до нашого офісу:",
-    fullAddress: "м. Київ, вул. Саксаганського 133А",
+    fullAddress: "ք․ Կիև, Սաքսագանսկու փող․ 133Ա",
     footerQuote: "\"Ми співпрацюємо виключно із перекладачами, які є професіоналами своєї справи, а тому переклади, виконані нашим Бюро перекладів, відповідають найвищим стандартам якості.\"",
 
     // Services (modal)
@@ -57,7 +57,7 @@ const translations = {
     notaryCertification: "Нотаріальне посвідчення",
     apostileLegalization: "Апостиль/легалізація",
     criminalRecord: "Довідка про несудимість",
-    migrationConsultations: "Міграційні консультації"
+    migrationConsultations: "Միգրացիոն խորհրդատվություն"
   },
 
   ENG: {
@@ -97,7 +97,7 @@ const translations = {
     writeCall: "Write/call:",
     visitOffice: "Visit our office:",
     fullAddress: "Kyiv, Saksaganskogo St. 133A",
-    footerQuote: "\"We work exclusively with translators who are professionals in their field, and therefore translations performed by our Translation Bureau meet the highest quality standards.\"",
+    footerQuote: "We work exclusively with translators who are professionals in their field, and therefore translations performed by our Translation Bureau meet the highest quality standards.",
 
     // Services (modal)
     orderService: "Order service",
@@ -157,7 +157,7 @@ const translations = {
     writeCall: "Пиши/звони:",
     visitOffice: "Посетите наш офис:",
     fullAddress: "г. Киев, ул. Саксаганского 133А",
-    footerQuote: "\"Мы сотрудничаем исключительно с переводчиками, которые являются профессионалами своего дела, поэтому переводы, выполненные нашим Бюро переводов, соответствуют высочайшим стандартам качества.\"",
+    footerQuote: "Мы сотрудничаем исключительно с переводчиками, которые являются профессионалами своего дела, поэтому переводы, выполненные нашим Бюро переводов, соответствуют высочайшим стандартам качества.",
 
     // Services (modal)
     orderService: "Заказать услугу",
@@ -217,7 +217,7 @@ const translations = {
     writeCall: "Գրեք/զանգահարեք:",
     visitOffice: "Այցելեք մեր գրասենյակ:",
     fullAddress: "ք․ Կիև, Սաքսագանսկու փող․ 133Ա",
-    footerQuote: "\"Մենք աշխատում ենք բացառապես իրենց ոլորտի պրոֆեսիոնալ թարգմանիչների հետ, ուստի մեր Թարգմանչական բյուրոյի կողմից կատարված թարգմանությունները համապատասխանում են որակի բարձրագույն չափանիշներին:\"",
+    footerQuote: "Մենք աշխատում ենք բացառապես իրենց ոլորտի պրոֆեսիոնալ թարգմանիչների հետ, ուստի մեր Թարգմանչական բյուրոյի կողմից կատարված թարգմանությունները համապատասխանում են որակի բարձրագույն չափանիշներին:",
 
     // Services (modal)
     orderService: "Պատվիրել ծառայություն",

@@ -926,7 +926,7 @@ body {
 }
 
 .where__map::before {
-	content: 'м. Київ, вул. Саксаганського 133А';
+	content: '';
 	position: absolute;
 	color: #932b2b;
 	text-align: center;

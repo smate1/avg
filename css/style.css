@@ -789,7 +789,7 @@ body {
 	line-height: 26px; /* 144.444% */
 }
 
-.infos__list-text span {
+.infos__list-text a {
 	color: #932b2b;
 }
 
